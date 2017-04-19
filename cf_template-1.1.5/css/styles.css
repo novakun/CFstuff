@@ -97,18 +97,9 @@ body{
 .intro .column{
 	padding: 0 20px;
 }
-.main-text {
-	clear: both;
-	padding-top: 60px;
-	padding: top right bottom left;
-}
 
-#skill-list{
-	margin-left: 50px;
-}
-.skill{
-	padding: 3% 2%;
-}
+
+
 /*Typography*/
 /*@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
