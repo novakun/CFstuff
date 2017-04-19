@@ -38,6 +38,7 @@ body{
 
 /*index.html*/
 
+
 .jumbotron{
 	background-image: url("../img/heroCF.jpg");
 	background-size: cover;
@@ -46,11 +47,10 @@ body{
 	margin-bottom: 0%;
 
 }
-.jumbotron p {
-	color: #fff;
-}
+
 .jumbotron h1 {
 	color: #fff;
+	text-align: center;
 }
 
 
@@ -59,6 +59,7 @@ body{
 	padding: 5%;
 	background-image: black;
 	background-size: cover;
+	margin-bottom: 5%;
 }
 
 .container-mission{
@@ -105,21 +106,37 @@ body{
 
 }
 
-
 .column{
 	width: 30%;
 	display: inline-block;
 	vertical-align: middle;
 
 }
+.col-md-8{
+	text-align: center;
+	width: 100%;
+	margin: 5% auto;
+}
+
+#bg {
+  position: fixed; 
+  top: 50px; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
 /*.intro .column{
 	padding: 0 20px;
 }*/
 
-
+#contact-h1{
+	padding: 5%;
+}
 
 /*Typography*/
-/*@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 h1,
 h2, 
@@ -149,11 +166,17 @@ li {
 .skill {
 	background-color: #5AD4C2 ;
 	color: #fff;
-}*/
+}
 
+#contact-h1{
+	font-size: 5em;
+	color: #fff;
+	text-transform: uppercase;
+}
 
-
-
+#whitelink{
+	color: #fff;
+}
 
 
 
