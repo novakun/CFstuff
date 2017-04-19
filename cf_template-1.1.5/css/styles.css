@@ -42,7 +42,7 @@ body{
 	background-image: url("../img/heroCF.jpg");
 	background-size: cover;
 	text-align: center;
-	padding: 5%;
+	/*padding: 5%;*/
 	margin-bottom: 0%;
 
 }
@@ -62,7 +62,7 @@ body{
 }
 
 .container-mission{
-	background-color: #f9f9f9;
+  background-color: #f9f9f9;
   margin-right: auto;
   margin-left: auto;
   padding-left: 0px;
@@ -110,7 +110,7 @@ body{
 	padding: 3% 2%;
 }
 /*Typography*/
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 h1,
 h2, 
@@ -140,7 +140,7 @@ li {
 .skill {
 	background-color: #5AD4C2 ;
 	color: #fff;
-}
+}*/
 
 
 
