@@ -1,6 +1,5 @@
 *{
 	box-sizing: border-box;
-	border: 1px solid red;
 }
 body{
 	margin:0px;
@@ -74,9 +73,16 @@ body{
 .container{
 	width: 100%;
 	margin: 0 auto;
+	vertical-align: middle;
+	text-align: center;
+	
 }
 .header h1{
 	text-align: center;
+}
+.container p{
+	text-align: left;
+	margin: 0% 5%;
 }
 /*.image{
 	display: inline-block;
@@ -92,10 +98,12 @@ body{
 
 }
 
+
 .column{
 	width: 30%;
 	display: inline-block;
 	vertical-align: middle;
+
 }
 /*.intro .column{
 	padding: 0 20px;
