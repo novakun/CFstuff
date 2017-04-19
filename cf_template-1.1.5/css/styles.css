@@ -1,5 +1,6 @@
 *{
 	box-sizing: border-box;
+	border: 1px solid red;
 }
 body{
 	margin:0px;
@@ -71,32 +72,34 @@ body{
 /*END index.html*/
 
 .container{
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
 }
 .header h1{
 	text-align: center;
 }
-.image{
+/*.image{
 	display: inline-block;
-}
-.image img{
+}*/
+/*.image img{
 	width: 100%;
+}*/
+/*.column{
+	display: inline;
+}*/
+.column img{
+	width: 100%;
+
 }
-.column{
-	display: inline-block;
-}
-.image, .column{
-	float: left;
-}
+
 .column{
 	width: 30%;
-	margin: 0% 1%;
-	padding: 0% 2%;
+	display: inline-block;
+	vertical-align: middle;
 }
-.intro .column{
+/*.intro .column{
 	padding: 0 20px;
-}
+}*/
 
 
 
