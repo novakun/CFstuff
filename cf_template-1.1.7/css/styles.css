@@ -4,6 +4,34 @@
 body{
 	margin:0px;
 }
+
+/*FAQ styling*/
+#FAQ{
+	width: 50%;
+}
+#headingOne, #headingTwo, #headingThree{
+	background-color: #343434;
+	color: white;
+}
+ #headingOne a:hover{
+	color: #F0E68C;
+	-webkit-transition: 600ms;
+	text-decoration: none;
+	}
+ #headingTwo a:hover{
+	color: #F0E68C;
+	-webkit-transition: 600ms;
+	text-decoration: none;
+	}
+
+  #headingThree a:hover{
+	color: #F0E68C;
+	-webkit-transition: 600ms;
+	text-decoration: none;
+	}
+
+/* END FAQ styling*/
+
 /* NAv Baar NEW*/
 .nav ul li {
 	display: inline-block;
@@ -238,3 +266,4 @@ color: #343434;
 footer {
 	color:#fff;
 }
+
