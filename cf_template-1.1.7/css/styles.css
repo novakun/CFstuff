@@ -40,10 +40,11 @@ body{
 }
 /*nav bar color, position etc*/
 .nav {
-	background: #343434;
-	position: fixed;
-	width: 100%;
-	top: 0;
+    background: #343434;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1 !important ;
 }
 /*setting up the font color for the nav bar text*/
 .nav ul li a{
