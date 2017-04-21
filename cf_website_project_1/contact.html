@@ -27,29 +27,26 @@
     
      <div class="container">
        <div class="row"><!-- Sets up the big text -->
-          <h1 id="contact-h1">Who are you gonna call?</h1>
-          <div class="row" id="organiser-adress" ><!-- here i'm grouping two columns inside of a row dividing screen half in haf with the columns to set up the adress and contact info -->
-              <div class="col-md-6">
-                <div class="row">
-                  <h4>Let's have a beer!</h4>
-                  <div class="col-md-12"id="contact-info"> <!-- columns to group the contact info -->
-                    <h5><span class=" glyphicon glyphicon-map-marker"> Blahblah Street.<br/> 188b Bakerbaker<br/>98790 London</span></h5>
-                 </div> <!-- closing column md 4 for adress -->
-                </div> <!-- closing container for adress row-->
-              </div><!-- closing container that contains andress -->
-              <div class="col-md-6">
-                <div class="row">
-                  <h4>Too far?</h4>
-                  <div class="col-md-12" id="contact-info"><!--  columns to group the contact info -->
-                    <h5> <span class=" glyphicon glyphicon-envelope"><a href="#"> notarealmail[@]notevenfake.com</a></span></h5>
-                  <h5><span class="glyphicon glyphicon-phone-alt"> 00-000-000-001</span></h5>
-                  </div> <!-- closing column md 4 for adress -->
-                </div> <!-- closing container for adress row-->
-              </div><!-- closing container that contains andress -->
-            </div> <!-- closing row that contains both containers -->
-        </div><!-- closing row that contains both containers and title -->
-      </div> <!-- end container -->
-     </div>  <!-- end of main container -->
+         <div class="col-md-12">
+            <h1 id="contact-h1">Who are you gonna call?</h1>
+          </div> <!-- close column -->
+        </div><!-- close row -->
+      </div> <!-- close container -->
+      <div class="container" id="organiser-adress"> 
+        <div class="row" id="frame-adress"><!-- here i'm grouping two columns inside of a row dividing screen half in haf with the columns to set up the adress and contact info -->
+          <div class="col-md-6 col-sm-12">
+            <h4>Let's have a beer!</h4>
+            <h5 class="adress-align-left"><span class=" glyphicon glyphicon-map-marker"> Blahblah Street.<br/> 188b Bakerbaker<br/>98790 London</span></h5>
+           </div> <!-- closing column md 4 for adress -->
+      
+          <div class="col-md-6 col-sm-12" id="contact-column">
+            <h4>Too far?</h4>
+            <h5 class="adress-align-left"> <span class=" glyphicon glyphicon-envelope"><a href="#"> notarealmail[@]notevenfake.com</a></span></h5>
+              <h5 class="adress-align-left"><span class="glyphicon glyphicon-phone-alt"> 00-000-000-001</span></h5>
+          </div> <!-- closing column md 4 for adress -->
+        </div> <!-- closing row that contains both containers -->
+    </div><!-- closing row that contains both containers and title -->
+      
      
 <!-- jquery setup  I needed to add this link to jquary in order to make the accordeon work-->
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

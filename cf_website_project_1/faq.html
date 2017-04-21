@@ -25,59 +25,60 @@
     
     
     
-     <div class="container">
+     <div class="container" id="questions-container">
        <div class="row"><!-- Sets up the big text -->
+          <div class="col-md-12">
           <h1 id="questions-h1">Questions?</h1>
-         
+          </div> <!-- closing column -->
+         </div> <!-- closing row -->
       </div> <!-- end container -->
 
       <!--Starting the accordeon FAQ-->
      <div class="container" id="FAQ"> 
        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingOne">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="glyphicon glyphicon-plus"></span> <!-- sets up the glyphicon for the accordeon's first row -->
-         Why does my accordeon not work?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body">
-        Most common mistake is a wrongly configuration of jQuery or other tiny setup thing that will likely make you waste a couple of hours googling around.
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwo">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          OMG is this normal?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
-        Based on an absolutely biased research never conducted, yes. Basically most of the time developers spend it trying to figure out how to make something and not that much time actually coding.
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          But, if this is true: Do I want to become a developer?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body">
-       Well, who am I to answer that. I'm just a sad FAQ without any type of machine learning algorythms configured... that being said, if you read this far, and came so far, why not? Is chilly outside anyways.
-      </div>
-    </div>
-  </div>
-</div> <!-- end of Accordeon -->
-
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="glyphicon glyphicon-plus"></span> <!-- sets up the glyphicon for the accordeon's first row -->
+               Why does my accordeon not work?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              Most common mistake is a wrongly configuration of jQuery or other tiny setup thing that will likely make you waste a couple of hours googling around.
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                OMG is this normal?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+              Based on an absolutely biased research never conducted, yes. Basically most of the time developers spend it trying to figure out how to make something and not that much time actually coding.
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                But, if this is true: Do I want to become a developer?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+             Well, who am I to answer that. I'm just a sad FAQ without any type of machine learning algorythms configured... that being said, if you read this far, and came so far, why not? Is chilly outside anyways.
+            </div>
+          </div>
+        </div>
+      </div> <!-- end of Accordeon -->
      </div>  <!-- end of main container -->
      
 <!-- jquery setup  I needed to add this link to jquary in order to make the accordeon work-->
