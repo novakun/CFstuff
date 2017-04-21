@@ -37,7 +37,6 @@ body{
 	display: inline-block;
 	padding: 10px 10px;
 	float: right;
-	
 }
 /*nav bar color, position etc*/
 .nav {
@@ -70,9 +69,10 @@ body{
 
 
 /*carousel styling*/
-#carousel-example-generic {
-	height: 100%
+#carousel-example-generic{
+	
 }
+
 
 /*index.html*/
 
