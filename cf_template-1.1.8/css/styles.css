@@ -35,9 +35,8 @@ body{
 /* NAv Baar NEW*/
 .nav ul li {
 	display: inline-block;
-	padding: 10px 10px;
+	padding: 20px 10px;
 	float: right;
-	
 }
 /*nav bar color, position etc*/
 .nav {
@@ -51,7 +50,6 @@ body{
 	color: white;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	
 
 }
 /*highlighted the hover over text*/
@@ -66,15 +64,22 @@ body{
     text-decoration: none;
     -webkit-transition: 200ms;
 }
+
 /*END NAV BAR*/
+/*index.html*/
 
+/*sets up hero image and centers its content*/
+.jumbotron{
+	background-image: url("../img/heroCF.jpg");
+	background-size: cover;
+	padding: 5% 0%;
+	margin-bottom: 0%;
 
-/*carousel styling*/
-#carousel-example-generic {
-	height: 100%
 }
 
-/*index.html*/
+.jumbotron h1 {
+	color: #fff;	
+}
 
 /*mission statement and description*/
 .mission-statement {
@@ -141,7 +146,16 @@ body{
 	margin: 5% auto;
 }
 
+/*sets up an all screen background image in contact*/
+#bg {
+  position: fixed; 
+  top: 60px; 
+  left: 0; 
 	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
 
 /*tweaks positioning of the contact h1 text*/
 #contact-h1{
@@ -182,7 +196,6 @@ body{
 footer{
     background-color: #333;
     overflow: hidden;
-    color:#fff;
 }
 /*setups the alignment for the contact info area*/
 #contact-info{
@@ -229,7 +242,7 @@ li {
 	font-family: 'Open Sans', sans-serif;
 }
 
-/*big text in hero text and contact*/
+/*big text in hero image and contact*/
 #hero-h1{
 	font-size: 6em;
 	color: #fff;
@@ -238,8 +251,9 @@ li {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 100;
 	letter-spacing: 7px;
-
-	
+	width: 100%;
+	padding-top: 10%;
+	padding-top: 10%;
 }
 /*Hero text for the contact screen*/
 #contact-h1{
@@ -299,4 +313,8 @@ li {
 
 
 
+/*gives colour to the footer's font on about.thml */
+footer {
+	color:#fff;
+}
 
