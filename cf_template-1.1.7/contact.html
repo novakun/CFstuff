@@ -19,28 +19,28 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">Work</a></li>
         <li><a href="#">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
       </ul>
     </div> <!--closing the nav bar-->
-     <!-- Sets up a big background image -->
-    <!-- <img src="img/contact/envelope.png" id="bg" alt="envelope"> -->
-    <!-- Sets up the big text -->
+    
+    
     
      <div class="container">
-       <div class="row">
+       <div class="row"><!-- Sets up the big text -->
           <h1 id="contact-h1">Who are you gonna call?</h1>
-          <div class="row" id="organiser-adress" >
+          <div class="row" id="organiser-adress" ><!-- here i'm grouping two columns inside of a row dividing screen half in haf with the columns to set up the adress and contact info -->
               <div class="col-md-6">
                 <div class="row">
                   <h4>Let's have a beer!</h4>
-                  <div class="col-md-12"id="contact-info"> 
-                    <h5><span class=" glyphicon glyphicon-phone-alt"> Blahblah Street.<br/> 188b Bakerbaker<br/>98790 London</span></h5>
+                  <div class="col-md-12"id="contact-info"> <!-- columns to group the contact info -->
+                    <h5><span class=" glyphicon glyphicon-map-marker"> Blahblah Street.<br/> 188b Bakerbaker<br/>98790 London</span></h5>
                  </div> <!-- closing column md 4 for adress -->
                 </div> <!-- closing container for adress row-->
               </div><!-- closing container that contains andress -->
               <div class="col-md-6">
                 <div class="row">
-                  <h4>too far?</h4>
-                  <div class="col-md-12" id="contact-info"> 
+                  <h4>Too far?</h4>
+                  <div class="col-md-12" id="contact-info"><!--  columns to group the contact info -->
                     <h5> <span class=" glyphicon glyphicon-envelope"><a href="#"> notarealmail[@]notevenfake.com</a></span></h5>
                   <h5><span class="glyphicon glyphicon-phone-alt"> 00-000-000-001</span></h5>
                   </div> <!-- closing column md 4 for adress -->
@@ -49,59 +49,13 @@
             </div> <!-- closing row that contains both containers -->
         </div><!-- closing row that contains both containers and title -->
       </div> <!-- end container -->
-     <div class="container" id="FAQ"> <!--accordeon FAQ-->
-       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingOne">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="glyphicon glyphicon-plus"></span>
-         Why does my accordeon not work?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body">
-        Most common mistake is a wrongly configuration of jQuery or other tiny setup thing that will likely make you waste a couple of hours googling around.
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwo">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          OMG is this normal?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
-        Based on an absolutely biased research never conducted, yes. Basically most of the time developers spend it trying to figure out how to make something and not that much time actually coding.
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          But, if this is true: Do I want to become a developer?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body">
-       Well, who am I to answer that. I'm just a sad FAQ without any type of machine learning algorythms configured... that being said, if you read this far, and came so far, why not? Is chilly outside anyways.
-      </div>
-    </div>
-  </div>
-</div>
-
-     </div> 
+     </div>  <!-- end of main container -->
      
-<!-- jquery setup -->
+<!-- jquery setup  I needed to add this link to jquary in order to make the accordeon work-->
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<!-- Bootstrap core JS -->
+<!-- Bootstrap core JS  added under jquery to make sure the cascade reading happens in the right order-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
 </html>
