@@ -13,15 +13,37 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
 
-  <body>
-    <div class="nav"><!--Creating the nav bar-->
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="about.html">Work</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-      </ul>
-    </div> <!--closing the nav bar-->
+  <body data-spy="scroll" data-target=".navbar">
+
+   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"><!--Creating the nav bar-->
+      <div class="container-fluid">
+      <!-- Mobile display -->
+        <div class="navbar-header">
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+  data-target=".navbar-collapse">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+          <a class="projectname navbar-brand" href="#">Novakun</a>
+        </div> <!-- closing the navbar-header -->
+
+        <!-- Content for navbar-->
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-right nav navbar-nav">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#questions">FAQ</a></li>
+            </ul>
+          </div><!-- closing the navbar-collapse -->
+        </div> <!-- end container fluid -->
+    </nav> <!--closing the nav bar-->
+
+
+<!-- starting home section -->
+   <div class="container" id="home"> 
 
 <!-- starting with image carousel for hero images -->
 
@@ -98,10 +120,234 @@
         </div><!-- /row -->
       </div> <!-- /container closing the container that holds the three columns for 'about', 'time'and 'goals'-->
       <!-- jquery setup  I needed to add this link to jquary in order to make the accordeon work-->
+
+</div><!-- closing div container for 'home' page section -->
+
+<!-- ****************  page HOME end ***************** -->
+
+<!-- ****************  page WORK starts  ***************** -->
+<div class="container" id="work">
+  <div class="container current-year">
+        <div class="row" >
+          <div class="col-md-12">
+           <h1 >Working On...</h1>
+          </div><!-- closing column -->
+        </div><!-- closing row -->
+       </div> <!-- end header -->
+      <div class="container"> <!--holds the three columns-->
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-6" >
+            <img src="img/about/jkwink.png" alt="Placeholder picture" id="img-about" >
+          </div><!-- end column -->
+          <div class="col-md-6 col-sm-6 col-xs-6" id="text-about">
+            <h3>Connecti Cards</h3>
+            <h6>Product Lead</h6>
+            <p>Become a <a href="#">CLOSED BETA</a> tester!<br/> Design and proof of concept. User testing. Team setup and execution.</p>
+          </div><!-- closing column -->
+        </div> <!-- end row -->
+        </div>
+      <div class="container current-year">
+        <div class="row" >
+          <div class="col-md-12">
+           <h1 >The Times Before Novakun...</h1>
+          </div><!-- closing column -->
+        </div><!-- closing row -->
+      </div> <!-- container -->
+       
+
+    <div class="container"> <!--holds the three columns-->
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6" id="text-about">
+          <h3>Jelly Splash Pop</h3>
+          <h6>Design Consultant</h6>
+          <p>Jumped in Jelly Splash Pop team to support the Product Lead preparing their team dynamics from 'prototype mode' to 'production mode'. Some of the responsibilities included creating a design approval processes which included developeres and artist early on for transparency, team cooperation and smoother feature execution uppon approval.</p>
+        </div><!-- closing column -->
+          <div class="col-md-4 col-sm-6 col-xs-6" >
+            <img src="http://www.apkdlmod.com/wp-content/uploads/2016/05/jelly-splash-pop.jpg" alt="Placeholder picture" id="img-about" >
+          </div><!-- end column -->
+        </div> <!-- end row -->
+
+        <div class="container">
+          <div class="row">
+          <div class="col-md-6">
+            <img src="img/about/empress.jpg" alt="Placeholder picture"id="img-about">
+          </div> <!-- closing column -->
+            <div class="col-md-6">
+              <h3>Max Ammo</h3>
+              <h6>Product Lead</h6>
+              <p>Design and prototype of game in Unity 3d. <br/> Proof of concept with user tests and internal version. <br/> Product vision creation.<br/> Setting up design pipelines and lead a 30+ highly professional team to deliver the game from concept to final into the market.</p>
+            </div> <!-- end column  -->
+          </div> <!-- end row -->
+        </div> <!-- end container for columns -->
+        
+
+      <div class="container"> <!--holds the three columns-->
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-6" id="text-about">
+            <h3>Magic Land</h3>
+            <h6>Lead Designer</h6>
+            <p>Refactoring of goal system and creation of multi branch storyline. <br/> Metagame refactoring for better user engagement<br/> Creation of crafting and market system to solve economy problems.<br/> Coordinated weekly feature releases.<br/>Accumulative monesiation % increased by 45% Retention increased by +15%</p>
+          </div><!-- closing column -->
+          <div class="col-md-5 col-sm-6 col-xs-6" >
+            <img src="img/about/kingShark.png" alt="Placeholder picture" id="img-about" >
+          </div><!-- end column -->
+        </div> <!-- end row -->
+      </div>
+
+      <div class="container"> <!--holds the three columns-->
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-6" >
+            <img src="img/about/tuck.png" alt="Placeholder picture" id="img-about" >
+          </div><!-- end column -->
+          <div class="col-md-6 col-sm-6 col-xs-6" id="text-about">
+            <h3>Various Projects</h3>
+            <h6>Game Designer</h6>
+            <p>Worked in multitude type of projects as a Game Designer. We ended up canceling most of them after user testing since we proved the vision would not be able to meet C level expectations.</p>
+          </div><!-- closing column --> 
+        </div> <!-- end row -->
+      </div>
+  </div>  
+
+
+</div> <!-- closing work id container -->
+
+
+<!-- ****************  page WORK ends  ***************** -->
+
+<!-- ****************  page CONTACT starts  ***************** -->
+
+<div class="container" id="contact">
+  <div class="container">
+       <div class="row"><!-- Sets up the big text -->
+         <div class="col-md-12">
+
+            <h1 id="contact-h1">Who are you gonna call?</h1>
+          </div> <!-- close column -->
+        </div><!-- close row -->
+      </div> <!-- close container -->
+      <div class="container" id="organiser-adress"> 
+        <div class="row" id="frame-adress"><!-- here i'm grouping two columns inside of a row dividing screen half in haf with the columns to set up the adress and contact info -->
+          <div class="col-md-6 col-sm-12" id="contact-column">
+            <h4>Let's have a beer!</h4>
+            <h5 class="adress-align-left"><span class=" glyphicon glyphicon-map-marker"> Blahblah Street.<br/> 188b Bakerbaker<br/>98790 London</span></h5>
+           </div> <!-- closing column md 4 for adress -->
+      
+          <div class="col-md-6 col-sm-12" id="contact-column">
+            <h4>Too far?</h4>
+            <h5 class="adress-align-left"> <span class=" glyphicon glyphicon-envelope"><a href="#"> notarealmail[@]notevenfake.com</a></span></h5>
+              <h5 class="adress-align-left"><span class="glyphicon glyphicon-phone-alt"> 00-000-000-001</span></h5>
+          </div> <!-- closing column md 4 for adress -->
+        </div> <!-- closing row that contains both containers -->
+        <div class="map-wrap">
+          <div class="overlay" onClick="style.pointerEvents='none'"></div><!-- wrap map iframe to turn off mouse scroll and turn it back on on click -->
+              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9710.789624885574!2d13.409419!3d52.520815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc8fafc484349e4a1!2sBerliner+Fernsehturm!5e0!3m2!1sen!2sde!4v1493029980458" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+            
+            </div> <!-- closing map-wrap -->
+    </div><!-- closing row that contains both containers and title -->
+</div> <!-- closing contact id container -->
+
+<!-- ****************  page CONTACT ENDS  ***************** -->
+
+
+
+
+<!-- ****************  page FAQ starts  ***************** -->
+<div class="container" id="questions">
+
+   <div class="container" id="questions-container">
+       <div class="row"><!-- Sets up the big text -->
+          <div class="col-md-12">
+          <h1 id="questions-h1">Questions?</h1>
+          </div> <!-- closing column -->
+         </div> <!-- closing row -->
+      </div> <!-- end container -->
+
+      <!--Starting the accordeon FAQ-->
+     <div class="container" id="FAQ"> 
+       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="glyphicon glyphicon-plus"></span> <!-- sets up the glyphicon for the accordeon's first row -->
+               Why does my accordeon not work?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              Most common mistake is a wrongly configuration of jQuery or other tiny setup thing that will likely make you waste a couple of hours googling around.
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                OMG is this normal?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+              Based on an absolutely biased research never conducted, yes. Basically most of the time developers spend it trying to figure out how to make something and not that much time actually coding.
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                But, if this is true: Do I want to become a developer?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+             Well, who am I to answer that. I'm just a sad FAQ without any type of machine learning algorythms configured... that being said, if you read this far, and came so far, why not? Is chilly outside anyways.
+            </div>
+          </div>
+        </div>
+      </div> <!-- end of Accordeon -->
+     </div>  <!-- end of main container -->
+</div> <!-- closing FAQ id container -->
+<!-- ****************  page FAQ ENDS  ***************** -->
+
+
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <!-- Bootstrap core JS  added under jquery to make sure the cascade reading happens in the right order-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
+
+<!-- smooth scrolling -->
+<script type="text/javascript">
+  var $root = $('html, body');
+    $('.navbar-nav a').click(function() {
+        var href = $.attr(this, 'href');
+    if(href != undefined) {
+        $root.animate({
+            scrollTop: $(href).offset().top
+        }, 700, function () {
+        window.location.hash = href;
+        });
+    }
+        return false;
+    });
+</script>
+<script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    
+
 </html>

@@ -3,37 +3,38 @@
 }
 body{
 	margin:0px;
+	position: relative;
 }
 
 /* NAv Baar NEW*/
-.nav ul li {
+.navbar ul li {
 	display: inline-block;
-	padding: 20px 10px;
 	float: left;
 }
 /*nav bar color, position etc*/
-.nav {
+.navbar {
 	background: #343434;
 	position: fixed;
 	width: 100%;
 	top: 0;
 	z-index: 1;
 }
+
 /*setting up the font color for the nav bar text*/
-.nav ul li a{
+.navbar ul li a{
 	color: white;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 
 }
 /*highlighted the hover over text*/
-.nav a:hover{
+.navbar a:hover{
 	color: #F0E68C;
 	-webkit-transition: 600ms;
 	text-decoration: none;
 }
 /*adding a click reaction*/
-.nav li:active { 
+.navbar li:active { 
     background-color:rgba(0, 0, 0, 0.5);
     text-decoration: none;
     -webkit-transition: 200ms;
@@ -44,14 +45,16 @@ body{
 
 /*carousel*/
 #carousel-example-generic{
-	margin-top:  -10%;
+	margin-top:  0%;
+}
+#home{
+	width: 100%;
 }
 
 /*mission statement and description*/
 #mission-statement {
 	text-align: center;
 	padding: 0% 5%;
-	background-image: black;
 	background-size: cover;
 	margin-bottom: 3%;
 	width: 100%;
@@ -94,16 +97,32 @@ body{
 #centered-description{
 	text-align: right;
 }
-
+#work {
+	width: 100%;
+}
 
 
 /*tweaks positioning of the contact h1 text*/
 #contact-h1{
 	padding-bottom: 5%;
+	color: white !important;
 }
-/*used to control the contact box that contains the contact info*/
-
-
+/*used to control the map*/
+.map {
+        height: 200px;
+        width: 100%;
+       }
+/* this sets up the map so that the wheel won' zoom in when scrolling down*/
+.map-wrap {
+	position:relative; 
+}
+.overlay {
+	width:100%;
+	min-height:500px; 
+	position:absolute; 
+	top:0;
+}
+/*end map config*/
 
 /*glyphicon tweaks*/
 
@@ -150,10 +169,11 @@ color: #343434;
 /*FAQ styling*/
 
 #questions-container{
-	width: 100%;
+	width: 80%;
 	background-color: #fff; 
 
 }
+
 
 #FAQ{
 	width: 100%;
@@ -207,16 +227,21 @@ h3 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 100;
 
-}}
+}
+a{
+	font-size: 1.5vw;
+}
 
 p,
 li {
 	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5vw;
 }
 
 .intro p{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 3em;
+	font-size: 1vw;
 	-webkit-margin-before:0;
 }
 .intro {
@@ -236,6 +261,7 @@ li {
 /*big text in hero image and contact*/
 #hero-h1{
 	font-size: 6em;
+	font-size: 7vw;
 	color: #fff;
 	text-transform: uppercase;
 	text-align: center;
@@ -248,6 +274,7 @@ li {
 /*Hero text for the contact screen*/
 #contact-h1{
 	font-size: 6em;
+	font-size: 7vw;
 	color: #151616;
 	text-transform: uppercase;
 	text-align: center;
@@ -261,13 +288,13 @@ li {
 }
 #questions-h1 {
 	font-size: 6em;
+	font-size: 7vw;
 	color: #151616;
 	text-transform: uppercase;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 100;
 	letter-spacing: 7px;
-	width: 100%;
 	padding-top: 13%;
 	padding-bottom: 10%;
 }
@@ -283,14 +310,28 @@ li {
 }
 #frame-adress{
 	padding:0% 15%;
+	width: 100%
 }
 .adress-align-left{
 	text-align: left;
-	padding: 0% 20%;
+	padding: 0% 0%;
 }
-
+#contact{
+	background-image: url("../img/contact/contact.jpg");
+	/*Add a background image*/
+    background-attachment: fixed;
+/*Give the background a fixed position does it not scroll when you scroll*/
+    background-size: cover;
+/*Have the background cover the entire div section*/
+    color: #343434;
+/*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
+    padding-top: 50px;
+    width: 100%;
+  
+}
 #contact-column a{
 	color: #343434;
+	z-index: 1;
 }
 /*highlighted the hover over text*/
 #contact-column a:hover{
