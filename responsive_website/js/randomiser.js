@@ -34,3 +34,6 @@ function newQuote() {
 
 document.getElementById('quoteDisplay').innerHTML = randomQuote();
 }
+window.onload = function() {
+  document.getElementById('quoteDisplay').innerHTML = randomQuote();
+};
