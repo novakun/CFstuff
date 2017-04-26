@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- setting up the flavicon for the page -->
     <link rel="shortcut icon" type="image/x-icon" href="img/cc-flavicon.png" />
+
   </head>
 
   <body data-spy="scroll" data-target=".navbar">
@@ -77,6 +78,12 @@
         <h1>About</h1>
         <p> Connecti Cards™ combines classic card games rules on a 5x5 grid. Players will take turns to create their best moves using the cards on the board. Once the board is full the game is over and the player with the highest score wins. Connecti Cards™ doubles down on meaningful social experiences and provides a fun, new way of playing casual card games to reconnect with old friends and family or meet new people.</p>
       </div> <!-- closing column for main title -->
+      <!-- ######################PLACEHOLDER VIDEO################### -->
+      <div class="col-xs-12 col-sm-12" id="panda-vid">
+<iframe width="854" height="480" style="text-align: left;" src="https://www.youtube.com/embed/DSehQsYU9h4" frameborder="0" allowfullscreen></iframe>
+</div><!-- closing video div -->
+
+<!-- ######################END PLACEHOLDER VIDEO################### -->
     </div> <!-- closing row for main title -->
 
 </div><!-- closing about container -->
@@ -198,17 +205,23 @@
   <div class="col-xs-12 col-sm-12" id="up-arrow">
     <a href="#nav-home"><img src="img/contact/up.png" alt="up"></a>
   </div>
-    <hr />
-        <div class="text-center center-block">
-            <p class="txt-railway">Copyright © 2017 Weekend Studios UG All rights reserved.</p>
-            <br />
-                <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social"></i></a>
-              <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social"></i></a>
-              <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-3x social"></i></a>
-              <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-3x social"></i></a>
-</div>
-    <hr />
-</div>
+<footer>
+    <div class="container">
+        <div class="row vcenter">
+            <div class="pull-left col-lg-4 col-xs-12" id="copyright">
+                <p>Copyright &copy;2017 Weekend Studios UG All rights reserved.</p>
+            </div>
+            <div class="col-lg-4 col-lg-offset-4 col-xs-12" id="social">
+                <div class="pull-right">
+                    <a href="https://twitter.com/WeekendStweet" class="twitter-follow-button" data-show-count="false">Follow @WeekendStweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                   <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+      
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
 
 <!-- ######################END FOOTER################### -->
 
@@ -217,8 +230,16 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <!-- Bootstrap core JS  added under jquery to make sure the cascade reading happens in the right order-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  </body>
-
+<!-- ######################FB BUTTON################### -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9&appId=126093577543934";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- ######################END FB BUTTON################### -->
 <!-- smooth scrolling -->
 <script type="text/javascript">
   var $root = $('html, body');
@@ -234,6 +255,11 @@
         return false;
     });
 </script>
+<!-- ######################TWITTER FOLLOW################### -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     <script src="js/randomiser.js" ></script>
+  </body>
+
+
 
 </html>
