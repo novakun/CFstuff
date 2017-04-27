@@ -64,7 +64,7 @@
       <div class="col-xs-12 col-sm-5 col-md-5" id="main-title-mob">
         <h1>Connecti Cards</h1>
         <h4> Simple yet surprisingly addictive.</h4>
-        <button type="button" class="btn btn-primary">Become A Tester!</button>
+        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Unlinked button ;) " id="become-tester">Become A Tester!</button>
       </div> <!-- closing column for main title -->
     </div> <!-- closing row for main title -->
   </div> <!-- Closing container for home -->
@@ -89,7 +89,7 @@
       </div> <!-- closing column for main title -->
       <!-- #################PLACEHOLDER VIDEO################ -->
       <div class="col-xs-12 col-sm-12" id="panda-vid">
-        <iframe width="854" height="480" style="text-align: left;" src="https://www.youtube.com/embed/DSehQsYU9h4" frameborder="0" allowfullscreen></iframe>
+        <iframe width="854" height="480" style="text-align: left;" src="https://www.youtube.com/embed/DSehQsYU9h4" frameborder="0" allowfullscreen data-toggle="tooltip" data-placement="top" title="A MUST HAVE cute panda video" id="panda-tool"></iframe>
       </div><!-- closing video div -->
       <!-- #################END PLACEHOLDER VIDEO################ -->
     </div> <!-- closing row for main title -->
@@ -279,7 +279,7 @@
         <textarea style="resize:none" cols="40" rows="5" placeholder="Drop us a line!" class="message-box form-control"></textarea>
         </div>
         <p id="contact-footnote">(*) Required attributes</p>
-        <button type="button" class="btn btn-info">Submit</button>
+        <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="left" title="Missing backend" id="submint-tool">Submit</button>
       </form> <!-- closing form -->
     </div> <!-- closing the col for the contact area -->
   <!--  #################### END CONTACT FORM ################## -->
@@ -297,7 +297,7 @@
 
 <div class="container">
   <div class="col-xs-12 col-sm-12" id="up-arrow">
-    <a href="#nav-home"><img src="img/contact/up.png" alt="up"></a>
+    <a href="#nav-home"><img src="img/contact/up.png" alt="up" data-toggle="tooltip" data-placement="top" title="Go Top" id="go-top-tool"></a>
   </div>
 <footer>
     <div class="container">
@@ -333,6 +333,16 @@
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
 <!-- STELLAR -->
   <script src="js/jquery.stellar.min.js"></script>
+<!-- ################ Tooltips ################ -->
+  <script>
+ $(function () {
+   $('#become-tester').tooltip();
+   $('#panda-tool').tooltip();
+   $('#submint-tool').tooltip();
+   $('#go-top-tool').tooltip();
+ });
+</script>
+<!-- ################ END Tooltips ################ -->
 
 <!-- ######################FB BUTTON################### -->
 <div id="fb-root"></div>
