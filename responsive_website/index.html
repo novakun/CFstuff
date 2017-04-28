@@ -266,21 +266,39 @@
      <!--  ############### START CONTACT FORM ############### -->
      <div class="col-xs-12 col-sm-6">
       <form id="contact-area"> 
-        <label for="name">Name(*)</label>
+        <label for="name" id="name-label">Name(*)</label>
         <div class="form-group">
-          <input class="form-control" type="text" placeholder="Your name" required="required">
+          <input class="form-control" type="text" placeholder="Your name" id="name-box" required="required" >
         </div>
-        <label for="email">Email(*)</label>
+        <label for="email" id="email-label">Email(*)</label>
         <div class="form-group">
-          <input class="form-control" type="email" placeholder="Enter your email" required="required">
+          <input class="form-control" type="email" placeholder="Enter your email" id="email-box" required="required">
         </div>
-        <label for="textarea">Text</label>
+        <label for="textarea" id="confirm-submition">Text</label>
         <div class="form-group">
-        <textarea style="resize:none" cols="40" rows="5" placeholder="Drop us a line!" class="message-box form-control"></textarea>
+        <textarea style="resize:none" id="message-box" cols="40" rows="5" placeholder="Drop us a line!" class="message-box form-control"></textarea>
+        <p id="visible-comment"></p>
         </div>
         <p id="contact-footnote">(*) Required attributes</p>
-        <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="left" title="Missing backend" id="submint-tool">Submit</button>
+        <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="Missing backend" id="submit-tool">Submit</button>
       </form> <!-- closing form -->
+
+    <!--   ########## Message sent confirmation popup ######## -->
+      <div class="modal fade bs-example-modal-sm" id="popup-msg-sent" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                <button type="button" id="close-popup" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <img src="img/about/jkwink.png" id="about-img" alt="game_icon">
+                <div class="modal-header">
+                  <h1>Sent!</h1>
+                </div><!-- closing modal header -->
+                <div class="modal-body">
+                  <p>Thanks for contacting us!<br/> We'll get back to you as soon as possible!</p>
+                </div><!-- closing modal body --> 
+              </div> <!-- closing popup -->
+            </div>
+          </div>
+            <!--   ########## CLOSING message sent popup######## -->
     </div> <!-- closing the col for the contact area -->
   <!--  #################### END CONTACT FORM ################## -->
 
@@ -333,6 +351,8 @@
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
 <!-- STELLAR -->
   <script src="js/jquery.stellar.min.js"></script>
+
+
 <!-- ################ Tooltips ################ -->
   <script>
  $(function () {
@@ -354,21 +374,7 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <!-- ######################END FB BUTTON################### -->
-<!-- smooth scrolling -->
-<script type="text/javascript">
-  var $root = $('html, body');
-    $('.navbar-nav a').click(function() {
-        var href = $.attr(this, 'href');
-    if(href != undefined) {
-        $root.animate({
-            scrollTop: $(href).offset().top
-        }, 700, function () {
-        window.location.hash = href;
-        });
-    }
-        return false;
-    });
-</script>
+
 <!-- ######################TWITTER FOLLOW################### -->
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     <script src="js/randomiser.js" ></script>

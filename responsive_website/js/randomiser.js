@@ -1,3 +1,6 @@
+
+$(document).ready(function(){
+
 var quotes = [
 "Waiting for other players to make their move...", 
 "Tap PLAY to bust a move!", 
@@ -37,3 +40,5 @@ document.getElementById('quoteDisplay').innerHTML = randomQuote();
 window.onload = function() {
   document.getElementById('quoteDisplay').innerHTML = randomQuote();
 };
+
+});
