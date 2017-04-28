@@ -50,10 +50,12 @@ $(".message-box").on("keyup", function(){
 	if(charCount>100){
 		$("#char-count").css("color","red");
 		$("#char-count").css("font-weight","800");
+		$(".message-box").css("color","red");
 	}
 	else{
 		$("#char-count").css("color","#151616");
 		$("#char-count").css("font-weight","100");
+		$(".message-box").css("color","#151616");
 	};
 
 }); //closing the charcount function
