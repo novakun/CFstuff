@@ -82,9 +82,8 @@ $("#submit-tool").on("click", function() {
 		console.log("text box was empty!");
 		$("#popup-msg-sent").modal("toggle");
 		console.log("modal popup was successfully toggled");
-		$("#popup-msg-sent h1").append("Write Something!");
-		$("#popup-msg-sent p").append("You need to write us something for us to be able to help you.");
-		$("#popup-msg-sent h1 p").clear();
+		$("#popup-msg-sent h1").html("Write Something!");
+		$("#popup-msg-sent p").html("You need to write us something for us to be able to help you.");
 		console.log("popup content was successfully cleared"); //you can clearly see that this console.log is not reached so it fails before
 		// I WANTED TO KEEP MY HTML CLEAN BY ADDING
 		// ALL THE POPUP CASES IN THE SCRIPT AREA
@@ -96,14 +95,12 @@ $("#submit-tool").on("click", function() {
 		$("#visible-comment").html(comment);
 		$("#message-box , #name-box , #email-box , #submit-tool").hide(); /*we hide the boxes*/
 		console.log("box containers were successfully hidden");
-		$("#confirm-submition").empty(); /*change submission text label for message sent label*/
-		$("#confirm-submition").append("Message Sent:");
+		$("#confirm-submition").html("Message Sent:");
 		$("#confirm-submition , #name-label, #email-label").css("color","#A9A9A9"); /*change colour to inactive for submission box label texts*/
 	    $("#popup-msg-sent").modal("toggle"); /*triggers message sent confirmation pop up*/
 	    console.log("modal popup was successfully toggled");
-	    $("#popup-msg-sent h1").append("Sent!");
-	    $("#popup-msg-sent p").append("Thanks for contacting us!<br/> We'll get back to you as soon as possible!");
-		$("#popup-msg-sent h1 p").clear();
+	    $("#popup-msg-sent h1").html("Sent!");
+	    $("#popup-msg-sent p").html("Thanks for contacting us!<br/> We'll get back to you as soon as possible!");
 		console.log("popup content was successfully cleared");
 	};
 
