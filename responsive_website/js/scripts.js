@@ -31,11 +31,49 @@ $(document).ready(function(){
 // #############################################
 // ##########################################
      //######## EVENTS ##############//
+
+
+
+//#############################################
+// ##########################################
+// Character count for the contact box
+//#############################################
+// ##########################################
+
+$(".message-box").on("keyup", function(){
+
+	var charCount = $(".message-box").val().length;
+	$("#char-count").html(charCount);
+	console.log(charCount);
+
+//creating a function to change the colour of 
+	if(charCount>100){
+		$("#char-count").css("color","red");
+		$("#char-count").css("font-weight","800");
+	}
+	else{
+		$("#char-count").css("color","#151616");
+		$("#char-count").css("font-weight","100");
+	};
+
+}); //closing the charcount function
+
+//#############################################
+// ##########################################
+// END OD CHAR COUNT count for the contact box
+//#############################################
+// ##########################################
+
+
+//#############################################
+// ##########################################
+     // SUBMIT BUTTON TOGGLED
+//#############################################
+// ##########################################
 $("#submit-tool").on("click", function() {
 	console.log("clicked!");
 
-	
-/*creating an if else statement to check if the text box was empty when submitting*/
+	/*creating an if else statement to check if the text box was empty when submitting*/
 	// first we store the content of message-box into a var
 	var comment = $(".message-box").val(); 
 	if(comment.length == 0){
@@ -71,6 +109,13 @@ $("#submit-tool").on("click", function() {
 
 	
 }); /*closing the submit button toggle events */
+//#############################################
+// ##########################################
+     // SUBMIT BUTTON END
+//#############################################
+// ##########################################
+
+
 
 // ############################################
 // ############################################
