@@ -56,7 +56,7 @@
 <!-- *************** START HOME *************** -->
 <!-- ########################################## -->
 <div id="nav-home"></div>
-  <div class="container" id="home"> 
+  <div class="container home--container" id="home"> 
     <div class="row"> 
       <div class="col-xs-12 col-sm-7 col-md-6" >
         <img src="img/home/Appicon-Round-Big.png" id="game-icon" alt="game_icon">
@@ -78,7 +78,7 @@
 <!-- ########################################## -->
 
   <div id="nav-about"></div>
-    <div class="container" id="about"> 
+    <div class="container about--container" id="about"> 
       <div class="row"> 
         <div class="col-xs-12 col-sm-6 col-sm-push-6  col-md-5 col-md-push-7" >
           <img src="img/about/jkwink.png" id="about-img" alt="game_icon">
@@ -108,7 +108,7 @@
 
 <!-- *********START CAROUSEL DISPLAY FOR NON MOB ************ -->
 
-  <div class="container" id="store-assets">
+  <div class="container store-assets--container" id="store-assets">
     <div class="row">
       <div class="col-xs-12 col-sm-12">
       <h1> Soon available in your favorite store!</h1>
@@ -183,7 +183,7 @@
 <!-- ************* START JK QUOTES ************ -->
 <!-- ########################################## -->
 
-<div class="container" id="jk-quotes"> 
+<div class="container quote-generator--container" id="jk-quotes"> 
   <div class="row" >
     <div class="col-xs-12 hidden-sm hidden-md hidden-lg"">
       <h1 id="jk-h1"> J.Jack Jokes</h1> 
@@ -213,7 +213,7 @@
 
 <!-- ********* START CONTACT INFO ************ -->
 
-  <div class="container" id="contact">
+  <div class="container contact--container" id="contact">
     <div class="row">
       <div class="col-xs-12 col-sm-12">
       <h1> Say hello!</h1>
@@ -248,8 +248,8 @@
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-body">
-                  <button type="button" id="close-popup-lg" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <embed id="embeded-pdf" src="http://www.europarl.europa.eu/pdfs/news/expert/infopress/20170329IPR69067/20170329IPR69067_en.pdf">
+                  <button type="button" id="close-popup-lg" class="close close--lg" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <embed class="embeded-pdf" id="embeded-pdf" src="http://www.europarl.europa.eu/pdfs/news/expert/infopress/20170329IPR69067/20170329IPR69067_en.pdf">
                 </div><!-- closing modal body --> 
               </div> <!-- closing popup -->
             </div>
@@ -265,7 +265,7 @@
 
      <!--  ############### START CONTACT FORM ############### -->
      <div class="col-xs-12 col-sm-6">
-      <form id="contact-area"> 
+      <form class="form-contact--area" id="contact-area"> 
         <label for="name" id="name-label">Name(*)</label>
         <div class="form-group">
           <input class="form-control" type="text" placeholder="Your name" id="name-box" required="required" >
@@ -281,7 +281,7 @@
         </div>
         <div class="row">
           <div class="col-xs-8">
-            <p id="contact-footnote">(*) Required attributes</p>
+            <p class="contact-footnote" id="contact-footnote">(*) Required attributes</p>
           </div>
           <div class="col-xs-2">
             <p>Char.</p>
@@ -325,7 +325,7 @@
 <!-- ************** START FOOTER ************** -->
 <!-- ########################################## -->
 
-<div class="container">
+<div class="container up-arrow--container">
   <div class="col-xs-12 col-sm-12" id="up-arrow">
     <a href="#nav-home"><img src="img/contact/up.png" alt="up" data-toggle="tooltip" data-placement="top" title="Go Top" id="go-top-tool"></a>
   </div>
