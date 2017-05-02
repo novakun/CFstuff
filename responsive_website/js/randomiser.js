@@ -32,13 +32,14 @@ function randomNoRepeats(array) {
 
 var randomQuote = randomNoRepeats(quotes);
 
-
-function newQuote() {
-
-document.getElementById('quoteDisplay').innerHTML = randomQuote();
-}
 window.onload = function() {
   document.getElementById('quoteDisplay').innerHTML = randomQuote();
 };
+
+var newQuote = function() {
+
+	document.getElementById('quoteDisplay').innerHTML = randomQuote();
+}
+
 
 });
