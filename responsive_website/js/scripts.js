@@ -27,7 +27,12 @@ $(document).ready(function(){
    $('#go-top-tool').tooltip();
  });
      //######## TOOLTIPS END #########//
-
+     
+	$(".work-img").mouseenter(function(){
+  $(".info", this).show();
+}).mouseleave(function(){
+  $(".info", this).hide();
+});
 
 
 // #############################################
