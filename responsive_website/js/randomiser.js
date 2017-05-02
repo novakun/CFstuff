@@ -36,9 +36,11 @@ window.onload = function() {
   document.getElementById('quoteDisplay').innerHTML = randomQuote();
 };
 
-var newQuote = function() {
+function newQuote() {
 
 	document.getElementById('quoteDisplay').innerHTML = randomQuote();
+
+
 }
 
 
