@@ -1,0 +1,358 @@
+
+html{ 
+
+	font-size: 2vw; 
+
+}
+
+h1 {
+
+	color: #151616;
+	text-transform: uppercase;
+	font-weight: 100;
+	letter-spacing: 5px;
+	padding-bottom: 2%;
+	text-align: center;
+	width: 100%;
+
+}
+
+p {
+
+	color: #151616;
+	font-weight: 300;
+	letter-spacing: 1px;
+
+}
+
+.bs-example-modal-sm img {
+	width: 50%;
+	padding-top: 15%;
+	padding-left: 5%;
+}
+
+/*##########################################*/
+/* ********Styling for the home area******** */
+/*##########################################*/
+
+.home--container {
+
+	margin-top: 9%;
+	padding-top: 5%;
+	text-align: center;
+	
+}
+
+/**************XS***********/
+
+
+.home--container  h1 {
+	padding-top: 2%;
+}
+
+.home--container  h4 {
+
+	width: 100%;
+	color: #151616;
+	font-style: italic;
+	text-align: center;
+	font-weight: 100;
+	letter-spacing: 3px;
+	padding-bottom: 5%;
+}
+
+.home--container  img {
+
+	width: 50%;
+	
+}
+
+.home--container  button {
+
+	text-decoration: none;
+	font-weight: 800;
+	padding-top: -5%;
+
+}
+/*##########################################*/
+/**************SMALL SIZE TWEAKS***********/
+/*##########################################*/
+
+
+/*##########################################*/
+/**************ABOUT**********/
+/*##########################################*/
+
+.about--container {
+
+	text-align: center;
+
+}
+
+.about--container img {
+
+margin-top: 10%;
+width: 40%;
+padding-top: 5%;
+
+}
+
+.about--container h1 {
+
+	margin-top: 10%;
+
+
+}
+.about--container p {
+
+	text-align: left;
+
+}
+
+iframe { 
+
+	width: 100%;
+	border: 1px solid #151616;
+	border-radius:6px;
+	margin: 10% 0;
+
+}
+
+/*##########################################*/
+/**************CAROUSEL ONLY FOR XS HIDDEN UP SIZES**********/
+/*##########################################*/
+
+
+.carousel-inner > .item > img, 
+.carousel-inner > .item > a > img {
+
+width: 75%; /* use this, or not */
+margin: auto;
+
+}
+/*##########################################*/
+/**************STORE ASSETS ONLY HAS SM UP NOT XS**********/
+/*##########################################*/
+
+.store-assets--container img {
+
+	width: 100%;
+
+}
+
+/*##########################################*/
+/* *******styling for Joker quotes********* */
+/*##########################################*/
+.quote-generator--container {
+	
+	width: 100%;
+	margin-bottom: 5%;
+	text-align: center;
+
+}
+.quote-generator--container h1{
+
+	margin-top: 10%;
+
+}
+
+
+.quote-generator--container img{
+
+	width: 100%;
+
+}
+
+.quote-generator--container button { 
+	
+	margin-top: 10%;
+
+}
+/*##########################################*/
+/* *************speech bubble*****************/
+/*##########################################*/
+.bubble {
+
+	position: relative;
+	background: #FFFFCC;
+	border: 1px solid #FFCC00;
+    max-width:250px;
+    padding:5%;
+    margin:0 auto;
+    border-radius:6px;
+    
+}
+.bubble:after,
+.bubble:before {
+
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.bubble:after {
+
+	border-color: rgba(255, 255, 204, 0);
+	border-right-color: #FFFFCC;
+	border-width: 15px;
+	margin-top: -15px;
+}
+.bubble:before {
+
+	border-color: rgba(255, 204, 0, 0);
+	border-right-color: #FFCC00;
+	border-width: 16px;
+	margin-top: -16px;
+}
+
+.bubble p {
+
+	margin-top: 10%;
+	text-transform: uppercase;
+	text-align: left;
+
+
+
+}
+/*##########################################*/
+/************** WORK IMAGES **********/
+/*##########################################*/
+.info {
+  position: absolute;
+  color: #151616;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  line-height:1.6;
+  text-align: center;
+}
+.proj-title {
+  font-weight:100;
+   display: none;
+   
+
+}
+.work-img {
+  display: block; /* needed to center the element with margin */
+  margin: auto; /* center the image inside the column if it's smaller */
+  max-width: 500px; /* needs to be set to the width of your image files if they are relatively small */
+  position: relative; /* is needed for .info position: absolute to work */
+}
+.info {
+  position: absolute; /* let's us move the text around and not worry about the image */
+  top: 30%; /* position the text 15% away from the top */
+  display: none;
+  background-color: #fff;
+}
+
+
+
+/*##########################################*/
+/**************CONTACT US SECTION**********/
+/*##########################################*/
+
+.contact--container {
+
+	text-align: center;
+	width: 85%;
+	padding-bottom: 5%;
+
+}
+.img-circle {
+
+	width: 20%;
+    border-radius: 50%;
+    margin: 2%;
+    padding: 5%;
+    border: 1px solid #151616 ;
+
+}
+
+
+.contact--container p {
+
+	padding-top: 2%;
+
+}
+
+
+.btn-primary {
+
+	margin-top: 5%;
+	margin-bottom: 10%;
+	margin-right: 1%;
+	margin-left: 1%;
+}
+
+.bs-example-modal-sm {
+
+	padding: 5%;
+
+}
+
+.close {
+
+	padding-top: 5%;
+	padding-right: 5%;
+}
+
+.close--lg {
+
+	padding-top: 1%;
+	padding-right: 1%;
+
+}
+
+.embeded-pdf {
+
+	height: 500px;
+    width: 100%;
+    padding: 1%;
+}
+
+/*<!--  ####################CONTACT FORM################## -->*/
+
+.form-control {
+
+	width: 100%;
+
+}
+.form-contact--area {
+
+	text-align: left;
+
+}
+
+.form-contact--area label {
+
+	padding-left: 1%;
+
+}
+
+.contact-footnote {
+
+	margin-top: -2%;
+
+}
+
+/********************************************
+************FOOTER****************
+********************************************/
+
+.up-arrow--container {
+
+	text-align: center;
+
+}
+
+.vcenter {
+
+  	text-align: center;
+
+  }
+
+
